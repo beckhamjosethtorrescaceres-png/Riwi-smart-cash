@@ -1,4 +1,3 @@
- 
 def retiro():
     menu = int(input("Digite la opcion 2 "))
     if menu == 2:
@@ -12,6 +11,7 @@ def retiro():
             print("Saldo insuficiente, intente otra vez")
 
 retiro()   
+
 
 
 
