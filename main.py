@@ -1,1 +1,1 @@
-saldo = 1000
+# validacion de reglas de negocio
