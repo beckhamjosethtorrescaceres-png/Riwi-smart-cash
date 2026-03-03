@@ -1,25 +1,12 @@
-def retiro():
-    menu = int(input("Digite la opcion 2 "))
-    if menu == 2:
-     while True:
-        retiro = int(input("Digite el valor a retirar: "))
-        if retiro <= saldo_inicial:
-            saldo_inicial -= retiro
-            print("Retiro exitoso. Saldo actual:", saldo_inicial)
-            break
+def retiro(saldo):
+    while True:
+        valor = int(input("Digite el valor a retirar: "))
+        if valor <= saldo:
+            saldo -= valor
+            print("Retiro exitoso. Saldo actual:", saldo)
+            return saldo
         else:
-            print("Saldo insuficiente, intente otra vez")
-
-retiro()   
-
-
-
-
-
-
-
-
-
+            print("Saldo insuficiente")
 
     
     
