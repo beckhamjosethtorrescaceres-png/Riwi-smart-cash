@@ -1,4 +1,3 @@
-saldo = 1000
 #Definiendo el nombre de usuario y su contraseña
 user_name = "Riwi"
 user_password = 123
@@ -29,3 +28,4 @@ while is_valid==False and is_valid_atte==True:
         print("Usuario y/o Contraseña inválidos")
         attempts=attempts+1
         print("Te quedan",3-attempts,"intentos")
+
