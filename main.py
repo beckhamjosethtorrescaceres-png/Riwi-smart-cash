@@ -1,5 +1,9 @@
 from consultar_saldo import consultar_s
 from Retirar import retiro
+from deposito import deposito
+
+saldoretirado=0
+saldodeposito=0
 saldo = 1000
 #Definiendo el nombre de usuario y su contraseña
 user_name = "riwi"
@@ -72,9 +76,12 @@ while True:
         consultar_s(saldo)
     elif opcion == 2:
         print("  → Iniciando retiro... ")
-        retiro(saldo)
+        saldoretirado= retiro(saldo)
+        saldo=saldoretirado
     elif opcion == 3:
-        depositar_dinero()
+        print("  → Iniciando depósito... ")
+        saldodeposito=deposito(saldo)
+        saldo=saldodeposito
     elif opcion == 4:
         print("  ╔════════════════════════════════════╗")
         print("  ║   ¡Gracias por usar nuestro cajero!   ║")
