@@ -1,4 +1,5 @@
 from consultar_saldo import consultar_s
+from Retirar import retiro
 saldo = 1000
 #Definiendo el nombre de usuario y su contraseña
 user_name = "riwi"
@@ -45,25 +46,6 @@ def mostrar_menu():
     print("═" * 45)
 
 
-def consultar_s(saldo):
-
-    # Aquí irá la función real cuando el compañero la termine
-    print("  → Consultando saldo... ")
-
-    print("    Saldo actual:", saldo, "\n")
-
-def retirar_dinero():
-    # Aquí irá la función real de retiro
-    print("  → Iniciando retiro... (pendiente de integración)")
-    print("    Monto a retirar: [en desarrollo]\n")
-
-
-def depositar_dinero():
-    # Aquí irá la función real de depósito
-    print("  → Procesando depósito... (pendiente de integración)")
-    print("    Monto a depositar: [en desarrollo]\n")
-
-
 
 # Programa principal
 print("╔════════════════════════════════════════════╗")
@@ -83,7 +65,7 @@ while True:
     if opcion == 1:
         consultar_s(saldo)
     elif opcion == 2:
-        retirar_dinero()
+        retiro(saldo)
     elif opcion == 3:
         depositar_dinero()
     elif opcion == 4:

@@ -68,4 +68,4 @@ while True:
         print("  ╚════════════════════════════════════╝\n")
         break
     else:
-        print("  Opción no válida. Elige entre 1 y 5.\n")
+        print("  Opción no válida. Elige entre 1 y 3.\n")
