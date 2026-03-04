@@ -1,8 +1,13 @@
-# Validar que la entrada sea numérica
-def validar_entrada_numerica(entrada):
+# Que no sea un número extremadamente grande que rompa lógica
+def validar_entrada_numerica_extrema(entrada):
+   
     try:
-        float(entrada)
+        numero = float(entrada.replace(".", ""))
+        if abs(numero) > 1e10: 
+            print("ERROR: El número es demasiado grande.")
+            return False
+        
         return True
     except ValueError:
-        print("Error: La entrada tiene que ser numerica.")
+        print("ERROR: Tiene que ingresar un valor numerico.")
         return False
