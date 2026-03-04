@@ -1,5 +1,6 @@
 from consultar_saldo import consultar_s
 from Retirar import retiro
+
 saldo = 1000
 #Definiendo el nombre de usuario y su contraseña
 user_name = "riwi"
