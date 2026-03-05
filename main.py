@@ -65,4 +65,4 @@ if validacion == True:
             mostrar_historial(historial)
             break
         else:
-            print("  Opción no válida. Elige entre 1 y 5.\n")
+            print("  Opción no válida. Elige entre 1 y 4.\n")

@@ -7,6 +7,3 @@ def retiro(saldo):
             return saldo
         else:
             print("Saldo insuficiente")
-
-    
-    
