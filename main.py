@@ -21,13 +21,6 @@ if validacion == True:
         print("  4  →  Salir")
         print("═" * 45)
 
-    def depositar_dinero():
-        # Aquí irá la función real de depósito
-        print("  → Procesando depósito... (pendiente de integración)")
-        print("    Monto a depositar: [en desarrollo]\n")
-
-
-
     # Programa principal
     print("╔════════════════════════════════════════════╗")
     print("║     BIENVENIDO AL CAJERO AUTOMÁTICO        ║")
