@@ -1,11 +1,13 @@
+from validaciones import validar_entrada_numerica
 
 def deposito(saldo):
- deposito = int(input("valor a depositar: "))
- confirmacion = input("confirma el valor ingresado?: ")
- if deposito <=0:
-      print("no se puede depositar un valor negativo")
- elif confirmacion.lower()=="si":
-     print("su nuevo saldo es: ",saldo + deposito) 
-     return saldo + deposito
- else:
-    print("deposito cancelado")
+    entrada = input("Digite el valor a depositar: ")
+    valor = validar_entrada_numerica(entrada)
+
+    if valor is None:
+        print("Depósito cancelado por entrada inválida.")
+        return saldo
+
+    saldo += valor
+    print("Depósito exitoso. Saldo actual:", saldo)
+    return saldo
