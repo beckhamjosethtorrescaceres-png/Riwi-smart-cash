@@ -21,3 +21,7 @@ def validar_entrada_numerica(entrada):
         print("ERROR: Debe ingresar un número entero válido.")
         return False
 
+# validar que el monto no sea mayor al saldo disponible
+def validar_retiro_permitido(saldo_actual, monto_a_retirar):
+    if monto_a_retirar <= saldo_actual:
+        return True
