@@ -6,8 +6,9 @@ def deposito(saldo):
 
     if valor is None:
         print("Depósito cancelado por entrada inválida.")
-        return saldo
+        return saldo, None
 
     saldo += valor
     print("Depósito exitoso. Saldo actual:", saldo)
-    return saldo
+
+    return saldo, valor

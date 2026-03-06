@@ -53,10 +53,9 @@ if validacion == True:
             saldo=saldoretirado
             historial.append(f"retiro :{saldo}")
         elif opcion == 3:
-            print("  → Iniciando depósito... ")
-            saldodeposito=deposito(saldo)
-            saldo=saldodeposito
-            historial.append(f"deposito :{saldo}")
+            saldo, monto = deposito(saldo)
+            if monto != None:
+                historial.append(f"deposito :{monto}")
         elif opcion == 4:
             print("  ╔════════════════════════════════════╗")
             print("  ║   ¡Gracias por usar nuestro cajero!   ║")
