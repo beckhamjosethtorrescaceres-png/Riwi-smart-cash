@@ -1,5 +1,5 @@
 from consultar_saldo import consultar_s
-from Retirar import retiro
+from retirar import retiro
 from deposito import deposito
 from autenticaycontroldeintentos import validarusuarioeintentos
 from historial import mostrar_historial
